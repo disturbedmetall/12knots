@@ -1,1 +1,1 @@
-https://disturbedmetall.github.io/12knots
+https://disturbedmetall.github.io/12knots/
