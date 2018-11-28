@@ -8123,7 +8123,7 @@ button:focus {
   outline: none;
   font-size: 1.25rem;
   min-width: 3rem; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 767.98px) {
     .custom_settings__currency {
       width: 33%; } }
 
@@ -8250,3 +8250,22 @@ button:focus {
     transition: all 0.3s ease; }
   .custom-head:hover:after {
     opacity: 0.85; }
+
+.custom_footer h5 {
+  color: #9a8374; }
+
+@media (max-width: 767.98px) {
+  .custom_footer__form {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (max-width: 767.98px) {
+  .custom_footer__social {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 992px) {
+  .custom_footer__bottom {
+    margin-top: -6rem; } }
