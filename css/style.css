@@ -5736,6 +5736,10 @@ textarea.form-control {
 button:focus {
   outline: none; }
 
+@media (min-width: 768px) {
+  .navbar {
+    padding-bottom: 0; } }
+
 .navbar-brand {
   margin-right: 15px;
   padding-top: 0.1rem;
@@ -5758,7 +5762,8 @@ button:focus {
     .navbar-brand {
       -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
-      order: 2; } }
+      order: 2;
+      line-height: 1.2; } }
   .navbar-brand:hover {
     -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.5)) brightness(1.1);
     filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.5)) brightness(1.1);
@@ -5831,7 +5836,9 @@ button:focus {
 
 @media (max-width: 767.98px) {
   .navbar-collapse.show {
-    height: calc(100vh - 48px);
+    min-height: calc(100vh - 48px);
+    height: calc(100vh - 40px);
+    max-height: 100vh;
     padding-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5932,6 +5939,9 @@ button:focus {
     @media (max-width: 767.98px) {
       .custom-head__title {
         top: 300px; } }
+    @media (max-width: 575.98px) {
+      .custom-head__title {
+        top: 280px; } }
   .custom-head--team {
     background-image: url("../images/team.jpg"); }
   .custom-head:after {
@@ -6058,15 +6068,36 @@ button:focus {
   -webkit-column-gap: 20;
   column-gap: 20; }
 
-.custom_press__image {
-  width: 150px;
-  margin-top: 6px;
-  margin-right: 15px; }
+.custom_press {
+  margin-bottom: 2rem; }
+  @media (max-width: 767.98px) {
+    .custom_press {
+      background-color: #fff;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding: 15px;
+      margin-bottom: 5px; } }
+  .custom_press__image {
+    width: 150px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto; }
+    .custom_press__image + div {
+      min-width: 300px; }
 
 .custom_news__text {
   text-decoration: underline;
   max-height: 7.3rem;
   overflow: hidden; }
+
+@media (max-width: 767.98px) {
+  .jumbotron {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 15px;
+    margin-bottom: 5px; } }
 
 .custom_footer h5 {
   color: #9a8374; }
