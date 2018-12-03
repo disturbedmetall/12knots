@@ -6860,7 +6860,8 @@ button:focus {
 .custom_map {
   position: relative;
   height: 300px;
-  background: lightgrey; }
+  background: lightgrey;
+  overflow: hidden; }
   .custom_map #map {
     position: absolute;
     top: 0;
