@@ -37,9 +37,23 @@ jQuery(document).ready(function($) {
     ]
   });
 
-  // initialize the map on the "map" div with a given center and zoom
-  var map = L.map('map', {
-    center: [51.505, -0.09],
-    zoom: 13
+
+  var ourOfficeIcon = L.icon({
+    iconUrl: '../images/location.svg',
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
   });
+
+  var ourOffice = L.marker([55.7646756, 37.5951047], {icon: ourOfficeIcon});
+
+  var map = L.map('map', {
+    center: [55.7646756, 37.5951047],
+    zoom: 15,
+      layers: [ourOffice]
+  });
+
+  L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  }).addTo(map);
+
 })(jQuery);
