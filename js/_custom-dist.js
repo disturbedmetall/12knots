@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){feather.replace(),e(".reviews_slider").slick({centerMode:!0,centerPadding:"30px",slidesToShow:3,responsive:[{breakpoint:768,settings:{arrows:!1,centerMode:!0,centerPadding:"40px",slidesToShow:3}},{breakpoint:480,settings:{arrows:!1,centerMode:!0,centerPadding:"40px",slidesToShow:1}}]});L.map("map",{center:[51.505,-.09],zoom:13})})(jQuery);
