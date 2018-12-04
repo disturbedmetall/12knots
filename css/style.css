@@ -7113,6 +7113,30 @@ span {
     height: 100%;
     content: ''; }
 
-.slick-prev:before,
-.slick-next:before {
-  color: black; }
+.slick-next:before,
+.slick-prev:before {
+  background-color: #495057;
+  border-radius: 50%;
+  width: 40px;
+  height: 20px;
+  display: block;
+  font-weight: bold;
+  z-index: 1;
+  -webkit-transform: scaleY(2);
+  -ms-transform: scaleY(2);
+  transform: scaleY(2); }
+
+.slick-prev {
+  left: 40px; }
+  .slick-prev:before {
+    content: "<";
+    padding-right: 4px; }
+
+.slick-next {
+  right: 58px; }
+  .slick-next:before {
+    content: ">";
+    padding-left: 4px; }
+
+.slick-list {
+  z-index: -1; }
