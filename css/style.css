@@ -6790,8 +6790,9 @@ span, .body-font {
     @media (max-width: 575.98px) {
       .custom-head__title {
         top: 290px; } }
-  .custom-head--team {
-    background-image: url("../images/team.jpg"); }
+  @media (min-width: 992px) {
+    .custom-head--team {
+      background-image: url("../images/team.jpg"); } }
   .custom-head:after {
     content: "";
     position: absolute;
