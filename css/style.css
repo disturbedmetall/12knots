@@ -6614,6 +6614,9 @@ span, .body-font {
         -ms-flex-order: 2;
         order: 2;
         line-height: 1.2; } }
+    @media (max-width: 767.98px) {
+      .navbar-brand {
+        left: calc(50% - 32px); } }
     .navbar-brand:hover {
       -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.5)) brightness(1.1);
       filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.5)) brightness(1.1);
@@ -6829,7 +6832,7 @@ span, .body-font {
       background-image: -o-radial-gradient(#495057, transparent, transparent), -o-radial-gradient(#495057, transparent, transparent);
       background-image: radial-gradient(#495057, transparent, transparent), radial-gradient(#495057, transparent, transparent);
       background-size: 16% 150%,16% 150%;
-      background-position: -10% -12px, 110% -12px;
+      background-position: -12% -12px, 112% -12px;
       background-repeat: no-repeat;
       z-index: -1; }
       .pills-touch .company-item:first-child,
@@ -6916,16 +6919,32 @@ span, .body-font {
     text-align: center;
     height: 6rem;
     padding-top: 0.5rem; }
-    .custom_circle__text > h5 {
-      white-space: nowrap;
-      overflow: hidden;
-      -o-text-overflow: ellipsis;
-      text-overflow: ellipsis;
-      padding-left: 15px;
-      padding-right: 15px; }
-      .custom_circle__text > h5:hover {
-        overflow: visible;
-        white-space: normal; }
+    .custom_circle__text > h5:hover {
+      overflow: visible;
+      white-space: normal; }
+  @media (max-width: 575.98px) {
+    .custom_circle {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0; }
+      .custom_circle__box {
+        width: 140px;
+        padding-top: 140px;
+        z-index: 1; }
+      .custom_circle__name {
+        bottom: auto;
+        top: 0;
+        right: 0;
+        left: 70px;
+        padding-left: 85px;
+        text-align: left;
+        z-index: 0; }
+      .custom_circle__text {
+        text-align: left;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        left: 155px; } }
 
 .custom-list {
   padding-left: 0;
@@ -7115,6 +7134,10 @@ span, .body-font {
     height: 100%;
     content: ''; }
 
+.slick-next,
+.slick-prev {
+  z-index: 1001; }
+
 .slick-next:before,
 .slick-prev:before {
   background-color: #495057;
@@ -7123,7 +7146,6 @@ span, .body-font {
   height: 20px;
   display: block;
   font-weight: bold;
-  z-index: 1;
   -webkit-transform: scaleY(2);
   -ms-transform: scaleY(2);
   transform: scaleY(2); }
@@ -7139,6 +7161,3 @@ span, .body-font {
   .slick-next:before {
     content: ">";
     padding-left: 4px; }
-
-.slick-list {
-  z-index: -1; }
