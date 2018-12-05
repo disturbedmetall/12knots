@@ -6395,8 +6395,7 @@ textarea.form-control {
     height: 53.84615%;
     color: white;
     background: #3C3B6E;
-    font-size: 0.05821rem;
-    text-shadow: 0rem 0rem white, 0.32017rem 0rem white, 0.64033rem 0rem white, 0.9605rem 0rem white, 1.28067rem 0rem white, 1.60083rem 0rem white, 0.14553rem 0.15717rem white, 0.4657rem 0.15717rem white, 0.78586rem 0.15717rem white, 1.10603rem 0.15717rem white, 1.4262rem 0.15717rem white, 0rem 0.31435rem white, 0.32017rem 0.31435rem white, 0.64033rem 0.31435rem white, 0.9605rem 0.31435rem white, 1.28067rem 0.31435rem white, 1.60083rem 0.31435rem white, 0.14553rem 0.47152rem white, 0.4657rem 0.47152rem white, 0.78586rem 0.47152rem white, 1.10603rem 0.47152rem white, 1.4262rem 0.47152rem white, 0rem 0.62869rem white, 0.32017rem 0.62869rem white, 0.64033rem 0.62869rem white, 0.9605rem 0.62869rem white, 1.28067rem 0.62869rem white, 1.60083rem 0.62869rem white, 0.14553rem 0.78586rem white, 0.4657rem 0.78586rem white, 0.78586rem 0.78586rem white, 1.10603rem 0.78586rem white, 1.4262rem 0.78586rem white, 0rem 0.94304rem white, 0.32017rem 0.94304rem white, 0.64033rem 0.94304rem white, 0.9605rem 0.94304rem white, 1.28067rem 0.94304rem white, 1.60083rem 0.94304rem white, 0.14553rem 1.10021rem white, 0.4657rem 1.10021rem white, 0.78586rem 1.10021rem white, 1.10603rem 1.10021rem white, 1.4262rem 1.10021rem white, 0rem 1.25738rem white, 0.32017rem 1.25738rem white, 0.64033rem 1.25738rem white, 0.9605rem 1.25738rem white, 1.28067rem 1.25738rem white, 1.60083rem 1.25738rem white; }
+    font-size: 0.05821rem; }
 
 .flag--ireland {
   background: -webkit-gradient(linear, left top, right top, color-stop(33.3%, #00ae00), color-stop(33.3%, white), color-stop(66.6%, white), color-stop(66.6%, orange));
@@ -6528,9 +6527,10 @@ button:focus {
   outline: none; }
 
 a,
+body,
 p,
 small,
-span {
+span, .body-font {
   font-family: "Roboto", sans-serif, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .custom-select {
@@ -6743,7 +6743,8 @@ span {
   font-size: 1.25rem;
   border-radius: 0;
   padding: 0;
-  line-height: 1.3; }
+  line-height: 1.3;
+  font-family: "Yanone Kaffeesatz", sans-serif, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
   .custom_header__currency:focus {
     -webkit-box-shadow: none;
     box-shadow: none; }
@@ -6753,6 +6754,7 @@ span {
   box-shadow: inset -4px -4px 10px -2px rgba(0, 0, 0, 0.75);
   width: 19px;
   height: 19px;
+  overflow: hidden;
   cursor: pointer; }
 
 .custom-head {
@@ -6914,14 +6916,14 @@ span {
     text-align: center;
     height: 6rem;
     padding-top: 0.5rem; }
-    .custom_circle__text > * {
+    .custom_circle__text > h5 {
       white-space: nowrap;
       overflow: hidden;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       padding-left: 15px;
       padding-right: 15px; }
-      .custom_circle__text > *:hover {
+      .custom_circle__text > h5:hover {
         overflow: visible;
         white-space: normal; }
 

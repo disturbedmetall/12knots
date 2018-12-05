@@ -57,4 +57,18 @@ jQuery(document).ready(function($) {
     ]
   });
 
+  var kLang = document.getElementById("k-lang");
+  kLang.addEventListener("click", toggleIcon, false);
+  function toggleIcon(){
+    if (this.classList.contains('flag--russia')) {
+      this.classList.remove("flag--russia");
+      this.classList.add("flag--usa");
+    } else if(this.classList.contains('flag--usa')){
+      this.classList.remove("flag--usa");
+      this.classList.add("flag--russia");
+    } else {
+      console.log("Error in lang switcher");
+    }
+  }
+
 })(jQuery);
