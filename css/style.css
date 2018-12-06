@@ -6576,15 +6576,6 @@ span, .body-font {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-.custom-select-with-icon {
-  padding-left: 32px; }
-
-.custom-select-with-icon + .feather {
-  position: absolute;
-  left: 10px;
-  top: 6px;
-  color: #a5a5a5; }
-
 .navbar {
   min-height: 56px; }
   @media (min-width: 768px) {
@@ -6790,9 +6781,8 @@ span, .body-font {
     @media (max-width: 575.98px) {
       .custom-head__title {
         top: 290px; } }
-  @media (min-width: 992px) {
-    .custom-head--team {
-      background-image: url("../images/team.jpg"); } }
+  .custom-head--team {
+    background-image: url("../images/team.jpg"); }
   .custom-head:after {
     content: "";
     position: absolute;
@@ -6936,10 +6926,13 @@ span, .body-font {
         bottom: auto;
         top: 0;
         right: 0;
+        background-color: transparent;
+        color: #212529;
         left: 70px;
         padding-left: 85px;
         text-align: left;
-        z-index: 0; }
+        z-index: 0;
+        font-weight: bold; }
       .custom_circle__text {
         text-align: left;
         position: absolute;
@@ -7054,9 +7047,7 @@ span, .body-font {
 
 .custom_footer__partners img {
   width: 105px;
-  height: 40px;
-  border-radius: 6px;
-  background: white; }
+  height: 40px; }
 
 @media (min-width: 992px) {
   .custom_footer__bottom {
