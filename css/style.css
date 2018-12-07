@@ -6572,15 +6572,16 @@ span, .body-font {
 
 .navbar {
   min-height: 56px;
-  padding-top: 0; }
-  @media (min-width: 768px) {
+  padding-top: .5rem;
+  padding-bottom: .5rem; }
+  @media (min-width: 768px) and (max-width: 1439.98px) {
     .navbar {
       padding-bottom: 0;
-      padding-top: 0.8rem; } }
+      padding-top: .8rem; } }
   @media (max-width: 991.98px) {
     .navbar {
-      padding-top: 0.8rem;
-      padding-bottom: 0.8rem; } }
+      padding-top: .8rem;
+      padding-bottom: .8rem; } }
   .navbar-brand {
     margin-right: 15px;
     padding-top: 0.1rem;
