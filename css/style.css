@@ -6725,9 +6725,11 @@ span, .body-font {
       flex-wrap: wrap;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      max-width: 460px; }
       .navbar-nav .nav-item {
-        margin-right: 2rem; } }
+        padding-left: 1rem;
+        margin-right: 1rem; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link:not(:last-child) {
