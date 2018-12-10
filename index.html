@@ -93,7 +93,7 @@
 	<header class="fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container position-relative">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="index.html">
 					<svg width="135px" height="23px">
 					  <use xlink:href="#k-logo"></use>
 					</svg>
@@ -119,7 +119,7 @@
 						<a class="nav-item nav-link h5 mb-0" href="#">АРЕНДА ЯХТ</a>
 						<a class="nav-item nav-link h5 mb-0" href="#">БОНУСЫ</a>
 						<a class="nav-item nav-link h5 mb-0" href="#">МАГАЗИН</a>
-						<a class="nav-item nav-link h5 mb-0 active" href="#">О КОМПАНИИ<span class="sr-only">(current)</span></a>
+						<a class="nav-item nav-link h5 mb-0" href="about_company.html">О КОМПАНИИ<span class="sr-only">(current)</span></a>
 					</div>
 					<a href="tel:+74955178697" class="text-muted h5 custom_header__number d-xxl-none">+7 (495) 517-86-97</a>
 				</div>
@@ -127,828 +127,409 @@
 		</nav>
 	</header>
 
-	<main class="position-relative">
-		<div class="custom-head custom-head--team"></div>
-		<div class="container">
-			<nav aria-label="breadcrumb" class="d-none d-md-block">
-				<ol class="breadcrumb row">
-					<li class="breadcrumb-item"><a href="#"><small>Главная</small></a></li>
-					<li class="breadcrumb-item"><a href="#"><small>О компании</small></a></li>
-					<li class="breadcrumb-item active" aria-current="page"><small>Контакты</small></li>
-				</ol>
-			</nav>
-
-			<nav>
-				<div class="nav nav-pills mb-4 pills-touch" id="company-tabs" role="tablist">
-					<a class="company-item nav-link active" id="company-team-tab" data-toggle="tab" href="#company-team" role="tab" aria-controls="company-team" aria-selected="true">Команда</a>
-					<a class="company-item nav-link" id="company-company-tab" data-toggle="tab" href="#company-company" role="tab" aria-controls="company-company" aria-selected="false">Компания</a>
-					<a class="company-item nav-link" id="company-career-tab" data-toggle="tab" href="#company-career" role="tab" aria-controls="company-career" aria-selected="false">Карьера</a>
-					<a class="company-item nav-link" id="company-press-tab" data-toggle="tab" href="#company-press" role="tab" aria-controls="company-press" aria-selected="false">Пресса</a>
-					<a class="company-item nav-link" id="company-news-tab" data-toggle="tab" href="#company-news" role="tab" aria-controls="company-news" aria-selected="false">Новости</a>
-					<a class="company-item nav-link" id="company-review-tab" data-toggle="tab" href="#company-review" role="tab" aria-controls="company-review" aria-selected="false">Отзывы</a>
-					<a class="company-item nav-link" id="company-partners-tab" data-toggle="tab" href="#company-partners" role="tab" aria-controls="company-partners" aria-selected="false">Партнеры</a>
-					<a class="company-item nav-link" id="company-contacts-tab" data-toggle="tab" href="#company-contacts" role="tab" aria-controls="company-contacts" aria-selected="false">Контакты</a>
+	<main>
+		<section class="homepage_hero">
+			<div class="container">
+				<form class="form-inline homepage_hero__form row">
+					<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3">
+						<select class="custom-select custom-select-lg w-100">
+						<option>Тип активности</option>
+						<option>lorem</option>
+					</select>
+					</div>
+					<div class="col-sm-6 col-md-5 col-lg-3 mt-2 mt-sm-0">
+						<select class="custom-select custom-select-lg w-100">
+						<option>Все страны</option>
+						<option>lorem</option>
+					</select>
+					</div>
+					<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3 mt-2 mt-lg-0">
+						<select class="custom-select custom-select-lg w-100">
+						<option>Выберите даты</option>
+						<option>lorem</option>
+					</select>
+					</div>
+					<div class="col-sm-6 col-md-5 col-lg-3 mt-2 mt-lg-0">
+						<button type="submit" class="btn btn-success btn-lg btn-block">Подобрать яхту</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="bg-primary text-white text-center">
+			<div class="container">
+				<div class="row py-3">
+					<div class="col-sm-6 col-lg-3 border-right">
+						<img src="images/icon-yacht.svg" alt="rent a yacht">
+						<p class="mt-2">Аренда яхт</p>
+						<small>Быстрый поиск и бронирование парусных и моторных яхт в режиме реального времени. Профессиональная консультация по вопросам аренды</small>
+					</div>
+					<div class="col-sm-6 col-lg-3 border-right">
+						<img src="images/icon-learn.svg" alt="rent a yacht">
+						<p class="mt-2">Обучение</p>
+						<small>Профессиональная подготовка капитанов парусных и моторных яхт. Практические навыки по управлению яхтой в любой точке мира</small>
+					</div>
+					<div class="col-sm-6 col-lg-3 border-right">
+						<img src="images/icon-cruise.svg" alt="rent a yacht">
+						<p class="mt-2">Круизы</p>
+						<small>Предлагаем вам арендовать каюту и отправиться в круиз на одной из наших комфортабельных яхт!</small>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<img src="images/icon-regata.svg" alt="rent a yacht">
+						<p class="mt-2">Регаты</p>
+						<small>Мы поможем вам принять учатие в ведущих яхтенных состязаниях в мире</small>
+					</div>
 				</div>
-			</nav>
-		</div>
-
-		<div class="tab-content" id="company-tabContent">
-
-			<div class="tab-pane fade show active" id="company-team" role="tabpanel" aria-labelledby="company-team-tab">
-				<h3 class="custom-head__title">О КОМПАНИИ</h3>
-				<div class="container px-md-custom">
-					<h2 class="text-center pb-5 text-uppercase">Московская Команда</h2>
-					<div class="d-flex flex-wrap">
-						<div class="custom_circle">
-							<div class="custom_circle__box">
-								<img class="custom_circle__img" src="images/team.jpg" alt="My Image">
-							</div>
-							<h4 class="custom_circle__name">Григорий Елисеев</h4>
-							<div class="custom_circle__text">
-								<h5 class="text-truncate">Генеральный директор</h5>
-								<a href="tel:+7 (903) 735-87-70"><h5 class="text-truncate">+7 (903) 735-87-70</h5></a>
-								<a href="mailto:ge@12knots.ru"><h5 class="text-truncate">ge@12knots.ru</h5></a>
-							</div>
+			</div>
+		</section>
+		<section class="container mt-5 p-0">
+			<h2 class="text-center mb-3">АРЕНДА ЯХТ: ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ и ТИПЫ ЯХТ</h2>
+			<div class="popular_slider">
+				<div class="popular_slider__div">
+					<div class="custom_portrait__box">
+						<div class="custom_portrait__text">
+							<h4>Аренда парусных яхт</h4>
+							<p>более 3000 предложений</p>
 						</div>
-						<div class="custom_circle">
-							<div class="custom_circle__box">
-								<img class="custom_circle__img" src="images/team.jpg" alt="My Image">
-							</div>
-							<h4 class="custom_circle__name">Ольга Бакалина</h4>
-							<div class="custom_circle__text">
-								<h5 class="text-truncate">Руководитель отдела продаж</h5>
-								<a href="tel:+7 (925) 080-13-56"><h5 class="text-truncate">+7 (925) 080-13-56</h5></a>
-								<a href="mailto:olga@12knots.ru"><h5 class="text-truncate">olga@12knots.ru</h5></a>
-							</div>
+						<img src="images/type-sailing.jpg" class="custom_portrait__img" alt="image">
+					</div>
+				</div>
+				<div class="popular_slider__div">
+					<div class="custom_portrait__box">
+						<div class="custom_portrait__text">
+							<h4>Аренда моторных яхт </h4>
+							<p>более 2000 предложений</p>
 						</div>
-						<div class="custom_circle">
-							<div class="custom_circle__box">
-								<img class="custom_circle__img" src="images/team.jpg" alt="My Image">
-							</div>
-							<h4 class="custom_circle__name">Ирина Максимова</h4>
-							<div class="custom_circle__text">
-								<h5 class="text-truncate">Менеджер по аренде яхт</h5>
-								<a href="tel:+7 (926) 329-57-77"><h5 class="text-truncate">+7 (926) 329-57-77</h5></a>
-								<a href="mailto:irina@12knots.ru"><h5 class="text-truncate">irina@12knots.ru</h5></a>
+						<img src="images/type-motor.jpg" class="custom_portrait__img" alt="image">
+					</div>
+				</div>
+				<div class="popular_slider__div">
+					<div class="custom_portrait__box">
+						<div class="custom_portrait__text">
+							<h4>Аренда катамаранов</h4>
+							<p>более 2000 предложений</p>
+						</div>
+						<img src="images/type-catamaran.jpg" class="custom_portrait__img" alt="image">
+					</div>
+				</div>
+				<div class="popular_slider__div">
+					<div class="custom_portrait__box">
+						<div class="custom_portrait__text">
+							<h4>Аренда гулетов</h4>
+							<p>более 1000 предложений</p>
+						</div>
+						<img src="images/type-gulet.jpg" class="custom_portrait__img" alt="image">
+					</div>
+				</div>
+				<div class="popular_slider__div">
+					<div class="custom_portrait__box">
+						<div class="custom_portrait__text">
+							<h4>Аренда гулетов</h4>
+							<p>более 1000 предложений</p>
+						</div>
+						<img src="images/type-gulet.jpg" class="custom_portrait__img" alt="image">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container mt-3">
+			<div class="row">
+				<div class="col-sm-6 mb-4 mb-sm-0">
+					<img src="images\mediterranean-sea.jpg" class="img-fluid" alt="">
+				</div>
+				<div class="col-sm-6">
+					<div class="h-50 pb-2">
+						<img src="images\caribs.jpg" class="img-fluid" alt="caribs">
+					</div>
+					<div class="h-50 pt-2">
+						<img src="images\atlantic-europe.jpg" class="img-fluid" alt="atlantic europe">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="homepage_cruise">
+			<div class="container position-relative h-100">
+				<h2 class="text-center text-white pt-5">КРУИЗЫ НА ЯХТАХ</h2>
+				<div class="homepage_cruise__box">
+					<h2 class="display-3">Аренда кают</h2>
+					<p class="h1 mb-4">от $10 с человека в день</p>
+					<button class="btn btn-secondary btn-lg">Узнать больше</button>
+				</div>
+			</div>
+		</section>
+		<section class="homepage_learn">
+			<div class="container position-relative h-100">
+				<h2 class="text-center text-white pt-5">ОБУЧЕНИЕ ЯХТИНГУ</h2>
+				<div class="homepage_cruise__box text-white">
+					<h2 class="display-3">Морская практика</h2>
+					<p class="h1 mb-4">От $600 за курс</p>
+					<button class="btn btn-secondary btn-lg">Узнать больше</button>
+				</div>
+			</div>
+		</section>
+		<section class="text-center my-5">
+			<div class="reviews_slider">
+				<div class="bg-white m-1">
+					<div class="row no-gutters p-2 text-left">
+						<div class="col-sm-6 mb-2">
+							<p class="text-muted mb-0">Sailing School</p>
+							<p class="text-muted">Russia, June, 2018</p>
+						</div>
+						<div class="col-sm-6 text-right">
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star custom_star--empty"></i>
+						</div>
+						<div class="mb-2">
+							<p class="font-weight-bold mb-1">“Minor problems”</p>
+							<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
+						</div>
+						<div class="media">
+							<div class="flag--usa mr-3"></div>
+							<div class="media-body">
+								<p class="font-weight-bold">Tomas S</p>
+								<p>Bratislava, Slovakia</p>
+								<small class="text-muted">01.07.2018</small>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="bg-secondary d-block">
-					<div class="container">
-						<h2 class="text-center py-5 text-uppercase">НАШИ КАПИТАНЫ</h2>
-						<div class="d-flex flex-wrap">
-							<div class="custom_circle">
-								<div class="custom_circle__box">
-									<img class="custom_circle__img" src="images/team.jpg" alt="My Image">
-								</div>
-								<h4 class="custom_circle__name">Максим Ивановский</h4>
-								<div class="custom_circle__text">
-									<h5>Инструктор IYT рулевой 1-го класса России</h5>
-								</div>
-							</div>
-							<div class="custom_circle">
-								<div class="custom_circle__box">
-									<img class="custom_circle__img" src="images/team.jpg" alt="My Image">
-								</div>
-								<h4 class="custom_circle__name">Владимир Рябко</h4>
-								<div class="custom_circle__text">
-									<h5>Капитан дальнего плавания, профессиональный яхтсмен</h5>
-								</div>
-							</div>
-							<div class="custom_circle">
-								<div class="custom_circle__box">
-									<img class="custom_circle__img" src="images/team.jpg" alt="My Image">
-								</div>
-								<h4 class="custom_circle__name">Игорь Буров</h4>
-								<div class="custom_circle__text">
-									<h5>Мастер спорта, инструктор IYT</h5>
-								</div>
-							</div>
-							<div class="custom_circle">
-								<div class="custom_circle__box">
-									<img class="custom_circle__img" src="images/team.jpg" alt="My Image">
-								</div>
-								<h4 class="custom_circle__name">Егор Корж</h4>
-								<div class="custom_circle__text">
-									<h5>Инструктор IYT</h5>
-								</div>
-							</div>
-							<div class="custom_circle">
-								<div class="custom_circle__box">
-									<img class="custom_circle__img" src="images/team.jpg" alt="My Image">
-								</div>
-								<h4 class="custom_circle__name">Юлия Скачкова</h4>
-								<div class="custom_circle__text">
-									<h5>Мастер спорта России, яхтенный рулевой 1 класса</h5>
-								</div>
-							</div>
-							<div class="custom_circle">
-								<div class="custom_circle__box">
-									<img class="custom_circle__img" src="images/team.jpg" alt="My Image">
-								</div>
-								<h4 class="custom_circle__name">Александр Тощенко</h4>
-								<div class="custom_circle__text">
-									<h5>Мастер спорта, инструктор IYT </h5>
-								</div>
-							</div>
-							<div class="custom_circle">
-								<div class="custom_circle__box">
-									<img class="custom_circle__img" src="images/team.jpg" alt="My Image">
-								</div>
-								<h4 class="custom_circle__name">Михаил Скачков</h4>
-								<div class="custom_circle__text">
-									<h5>Чемпион России по парусному спорту</h5>
-								</div>
+				<div class="bg-white m-1">
+					<div class="row no-gutters p-2 text-left">
+						<div class="col-sm-6 mb-2">
+							<p class="text-muted mb-0">Sailing School</p>
+							<p class="text-muted">Russia, June, 2018</p>
+						</div>
+						<div class="col-sm-6 text-right">
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star custom_star--empty"></i>
+						</div>
+						<div class="mb-2">
+							<p class="font-weight-bold mb-1">“Minor problems”</p>
+							<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
+						</div>
+						<div class="media">
+							<div class="flag--russia mr-3"></div>
+							<div class="media-body">
+								<p class="font-weight-bold">Tomas S</p>
+								<p>Bratislava, Slovakia</p>
+								<small class="text-muted">01.07.2018</small>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="container-fluid p-0">
-					<h2 class="text-center py-5 text-uppercase">ОТЗЫВЫ</h2>
-					<div class="text-center mb-5">
-						<div class="reviews_slider">
-							<div class="bg-white m-1">
-								<div class="row no-gutters p-2 text-left">
-									<div class="col-sm-6 mb-2">
-										<p class="text-muted mb-0">Sailing School</p>
-										<p class="text-muted">Russia, June, 2018</p>
-									</div>
-									<div class="col-sm-6 text-right">
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star custom_star--empty"></i>
-									</div>
-									<div class="mb-2">
-										<p class="font-weight-bold mb-1">“Minor problems”</p>
-										<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
-									</div>
-									<div class="media">
-										<div class="flag--usa mr-3"></div>
-										<div class="media-body">
-											<p class="font-weight-bold">Tomas S</p>
-											<p>Bratislava, Slovakia</p>
-											<small class="text-muted">01.07.2018</small>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="bg-white m-1">
-								<div class="row no-gutters p-2 text-left">
-									<div class="col-sm-6 mb-2">
-										<p class="text-muted mb-0">Sailing School</p>
-										<p class="text-muted">Russia, June, 2018</p>
-									</div>
-									<div class="col-sm-6 text-right">
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star custom_star--empty"></i>
-									</div>
-									<div class="mb-2">
-										<p class="font-weight-bold mb-1">“Minor problems”</p>
-										<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
-									</div>
-									<div class="media">
-										<div class="flag--russia mr-3"></div>
-										<div class="media-body">
-											<p class="font-weight-bold">Tomas S</p>
-											<p>Bratislava, Slovakia</p>
-											<small class="text-muted">01.07.2018</small>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="bg-white m-1">
-								<div class="row no-gutters p-2 text-left">
-									<div class="col-sm-6 mb-2">
-										<p class="text-muted mb-0">Sailing School</p>
-										<p class="text-muted">Russia, June, 2018</p>
-									</div>
-									<div class="col-sm-6 text-right">
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star custom_star--empty"></i>
-									</div>
-									<div class="mb-2">
-										<p class="font-weight-bold mb-1">“Minor problems”</p>
-										<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
-									</div>
-									<div class="media">
-										<div class="flag--russia mr-3"></div>
-										<div class="media-body">
-											<p class="font-weight-bold">Tomas S</p>
-											<p>Bratislava, Slovakia</p>
-											<small class="text-muted">01.07.2018</small>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="bg-white m-1">
-								<div class="row no-gutters p-2 text-left">
-									<div class="col-sm-6 mb-2">
-										<p class="text-muted mb-0">Sailing School</p>
-										<p class="text-muted">Russia, June, 2018</p>
-									</div>
-									<div class="col-sm-6 text-right">
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star custom_star--empty"></i>
-									</div>
-									<div class="mb-2">
-										<p class="font-weight-bold mb-1">“Minor problems”</p>
-										<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
-									</div>
-									<div class="media">
-										<div class="flag--russia mr-3"></div>
-										<div class="media-body">
-											<p class="font-weight-bold">Tomas S</p>
-											<p>Bratislava, Slovakia</p>
-											<small class="text-muted">01.07.2018</small>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="bg-white m-1">
-								<div class="row no-gutters p-2 text-left">
-									<div class="col-sm-6 mb-2">
-										<p class="text-muted mb-0">Sailing School</p>
-										<p class="text-muted">Russia, June, 2018</p>
-									</div>
-									<div class="col-sm-6 text-right">
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star custom_star--empty"></i>
-									</div>
-									<div class="mb-2">
-										<p class="font-weight-bold mb-1">“Minor problems”</p>
-										<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
-									</div>
-									<div class="media">
-										<div class="flag--russia mr-3"></div>
-										<div class="media-body">
-											<p class="font-weight-bold">Tomas S</p>
-											<p>Bratislava, Slovakia</p>
-											<small class="text-muted">01.07.2018</small>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="bg-white m-1">
-								<div class="row no-gutters p-2 text-left">
-									<div class="col-sm-6 mb-2">
-										<p class="text-muted mb-0">Sailing School</p>
-										<p class="text-muted">Russia, June, 2018</p>
-									</div>
-									<div class="col-sm-6 text-right">
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star custom_star--empty"></i>
-									</div>
-									<div class="mb-2">
-										<p class="font-weight-bold mb-1">“Minor problems”</p>
-										<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
-									</div>
-									<div class="media">
-										<div class="flag--russia mr-3"></div>
-										<div class="media-body">
-											<p class="font-weight-bold">Tomas S</p>
-											<p>Bratislava, Slovakia</p>
-											<small class="text-muted">01.07.2018</small>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="bg-white m-1">
-								<div class="row no-gutters p-2 text-left">
-									<div class="col-sm-6 mb-2">
-										<p class="text-muted mb-0">Sailing School</p>
-										<p class="text-muted">Russia, June, 2018</p>
-									</div>
-									<div class="col-sm-6 text-right">
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star custom_star--empty"></i>
-									</div>
-									<div class="mb-2">
-										<p class="font-weight-bold mb-1">“Minor problems”</p>
-										<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
-									</div>
-									<div class="media">
-										<div class="flag--russia mr-3"></div>
-										<div class="media-body">
-											<p class="font-weight-bold">Tomas S</p>
-											<p>Bratislava, Slovakia</p>
-											<small class="text-muted">01.07.2018</small>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="bg-white m-1">
-								<div class="row no-gutters p-2 text-left">
-									<div class="col-sm-6 mb-2">
-										<p class="text-muted mb-0">Sailing School</p>
-										<p class="text-muted">Russia, June, 2018</p>
-									</div>
-									<div class="col-sm-6 text-right">
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star custom_star--empty"></i>
-									</div>
-									<div class="mb-2">
-										<p class="font-weight-bold mb-1">“Minor problems”</p>
-										<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
-									</div>
-									<div class="media">
-										<div class="flag--russia mr-3"></div>
-										<div class="media-body">
-											<p class="font-weight-bold">Tomas S</p>
-											<p>Bratislava, Slovakia</p>
-											<small class="text-muted">01.07.2018</small>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="bg-white m-1">
-								<div class="row no-gutters p-2 text-left">
-									<div class="col-sm-6 mb-2">
-										<p class="text-muted mb-0">Sailing School</p>
-										<p class="text-muted">Russia, June, 2018</p>
-									</div>
-									<div class="col-sm-6 text-right">
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star"></i>
-										<i data-feather="star" class="custom_star custom_star--empty"></i>
-									</div>
-									<div class="mb-2">
-										<p class="font-weight-bold mb-1">“Minor problems”</p>
-										<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
-									</div>
-									<div class="media">
-										<div class="flag--russia mr-3"></div>
-										<div class="media-body">
-											<p class="font-weight-bold">Tomas S</p>
-											<p>Bratislava, Slovakia</p>
-											<small class="text-muted">01.07.2018</small>
-										</div>
-									</div>
-								</div>
+				<div class="bg-white m-1">
+					<div class="row no-gutters p-2 text-left">
+						<div class="col-sm-6 mb-2">
+							<p class="text-muted mb-0">Sailing School</p>
+							<p class="text-muted">Russia, June, 2018</p>
+						</div>
+						<div class="col-sm-6 text-right">
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star custom_star--empty"></i>
+						</div>
+						<div class="mb-2">
+							<p class="font-weight-bold mb-1">“Minor problems”</p>
+							<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
+						</div>
+						<div class="media">
+							<div class="flag--russia mr-3"></div>
+							<div class="media-body">
+								<p class="font-weight-bold">Tomas S</p>
+								<p>Bratislava, Slovakia</p>
+								<small class="text-muted">01.07.2018</small>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="bg-white">
-					<div class="container">
-						<div class="row py-2 pb-md-4">
-							<div class="col-md-6 custom-collapse-sm">
-								<!-- <h4 class="font-weight-bold my-3">Почему «12 Узлов»?</h4>
-								<p>Для измерения скорости на море пользуются величиной «узел» = 1 морская миля в час. Английское слово «узел» (knot) также, как и русское, имеет значение и узла на тросе, и меры скорости – миля в час. Связано это с тем, что в старину скорость судна
-									измеряли, выпуская за борт размеченный через равные промежутки линь с привязанным на конце сектором. Скорость измеряли количеством узлов, которые выходили за борт за определенный промежуток времени, который определяли по песочным часам.</p>
-								<ul class="mt-3 pl-2">
-									<li>12 узлов - комфортная крейсерская скорость, с которой идет круизная яхта</li>
-									<li>12 узлов - оптимальная скорость ветра для обучения работе с парусами</li>
-									<li>12 узлов - спокойный старт и удачное продолжение вашего плавания</li>
-								</ul> -->
-								<a class="h4 font-weight-bold my-md-3 d-block" data-toggle="collapse" href="#k-knots-why" role="button" aria-expanded="false" aria-controls="k-knots-why">Почему «12 Узлов»?</a>
-								<div class="collapse" id="k-knots-why">
-									<p>Для измерения скорости на море пользуются величиной «узел» = 1 морская миля в час. Английское слово «узел» (knot) также, как и русское, имеет значение и узла на тросе, и меры скорости – миля в час. Связано это с тем, что в старину скорость судна
-										измеряли, выпуская за борт размеченный через равные промежутки линь с привязанным на конце сектором. Скорость измеряли количеством узлов, которые выходили за борт за определенный промежуток времени, который определяли по песочным часам.</p>
-									<ul class="mt-3 pl-2">
-										<li>12 узлов - комфортная крейсерская скорость, с которой идет круизная яхта</li>
-										<li>12 узлов - оптимальная скорость ветра для обучения работе с парусами</li>
-										<li>12 узлов - спокойный старт и удачное продолжение вашего плавания</li>
-									</ul>
-							  </div>
+				<div class="bg-white m-1">
+					<div class="row no-gutters p-2 text-left">
+						<div class="col-sm-6 mb-2">
+							<p class="text-muted mb-0">Sailing School</p>
+							<p class="text-muted">Russia, June, 2018</p>
+						</div>
+						<div class="col-sm-6 text-right">
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star custom_star--empty"></i>
+						</div>
+						<div class="mb-2">
+							<p class="font-weight-bold mb-1">“Minor problems”</p>
+							<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
+						</div>
+						<div class="media">
+							<div class="flag--russia mr-3"></div>
+							<div class="media-body">
+								<p class="font-weight-bold">Tomas S</p>
+								<p>Bratislava, Slovakia</p>
+								<small class="text-muted">01.07.2018</small>
 							</div>
-							<div class="col-md-6 custom-collapse-sm">
-								<!-- <h4 class="font-weight-bold my-3">«12 Узлов» это:</h4>
-								<ul class="pl-2">
-									<li>Команда единомышленников, страстно влюбленных в море и яхты.</li>
-									<li>Команда профессиональных яхтсменов, готовых делиться с вами знаниями, умениями, навыками и просто впечатлениями.</li>
-								</ul> -->
-								<a class="h4 font-weight-bold my-md-3 d-block" data-toggle="collapse" href="#k-knots-are" role="button" aria-expanded="false" aria-controls="k-knots-are">«12 Узлов» это:</a>
-								<div class="collapse" id="k-knots-are">
-									<ul class="pl-2">
-										<li>Команда единомышленников, страстно влюбленных в море и яхты.</li>
-										<li>Команда профессиональных яхтсменов, готовых делиться с вами знаниями, умениями, навыками и просто впечатлениями.</li>
-									</ul>
-								</div>
-								<!-- <h4 class="font-weight-bold mt-3">Наше кредо:</h4>
-								<ul class="pl-2">
-									<li>Высочайший сервис и качество вашего обслуживания.</li>
-									<li>Мы делаем все, чтобы соответствовать вашим ожиданиям и превосходить их.</li>
-								</ul> -->
-								<a class="h4 font-weight-bold mt-md-3 d-block" data-toggle="collapse" href="#k-knots-kredo" role="button" aria-expanded="false" aria-controls="k-knots-kredo">Наше кредо:</a>
-								<div class="collapse" id="k-knots-kredo">
-									<ul class="pl-2">
-										<li>Высочайший сервис и качество вашего обслуживания.</li>
-										<li>Мы делаем все, чтобы соответствовать вашим ожиданиям и превосходить их.</li>
-									</ul>
-								</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white m-1">
+					<div class="row no-gutters p-2 text-left">
+						<div class="col-sm-6 mb-2">
+							<p class="text-muted mb-0">Sailing School</p>
+							<p class="text-muted">Russia, June, 2018</p>
+						</div>
+						<div class="col-sm-6 text-right">
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star custom_star--empty"></i>
+						</div>
+						<div class="mb-2">
+							<p class="font-weight-bold mb-1">“Minor problems”</p>
+							<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
+						</div>
+						<div class="media">
+							<div class="flag--russia mr-3"></div>
+							<div class="media-body">
+								<p class="font-weight-bold">Tomas S</p>
+								<p>Bratislava, Slovakia</p>
+								<small class="text-muted">01.07.2018</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white m-1">
+					<div class="row no-gutters p-2 text-left">
+						<div class="col-sm-6 mb-2">
+							<p class="text-muted mb-0">Sailing School</p>
+							<p class="text-muted">Russia, June, 2018</p>
+						</div>
+						<div class="col-sm-6 text-right">
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star custom_star--empty"></i>
+						</div>
+						<div class="mb-2">
+							<p class="font-weight-bold mb-1">“Minor problems”</p>
+							<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
+						</div>
+						<div class="media">
+							<div class="flag--russia mr-3"></div>
+							<div class="media-body">
+								<p class="font-weight-bold">Tomas S</p>
+								<p>Bratislava, Slovakia</p>
+								<small class="text-muted">01.07.2018</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white m-1">
+					<div class="row no-gutters p-2 text-left">
+						<div class="col-sm-6 mb-2">
+							<p class="text-muted mb-0">Sailing School</p>
+							<p class="text-muted">Russia, June, 2018</p>
+						</div>
+						<div class="col-sm-6 text-right">
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star custom_star--empty"></i>
+						</div>
+						<div class="mb-2">
+							<p class="font-weight-bold mb-1">“Minor problems”</p>
+							<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
+						</div>
+						<div class="media">
+							<div class="flag--russia mr-3"></div>
+							<div class="media-body">
+								<p class="font-weight-bold">Tomas S</p>
+								<p>Bratislava, Slovakia</p>
+								<small class="text-muted">01.07.2018</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white m-1">
+					<div class="row no-gutters p-2 text-left">
+						<div class="col-sm-6 mb-2">
+							<p class="text-muted mb-0">Sailing School</p>
+							<p class="text-muted">Russia, June, 2018</p>
+						</div>
+						<div class="col-sm-6 text-right">
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star custom_star--empty"></i>
+						</div>
+						<div class="mb-2">
+							<p class="font-weight-bold mb-1">“Minor problems”</p>
+							<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
+						</div>
+						<div class="media">
+							<div class="flag--russia mr-3"></div>
+							<div class="media-body">
+								<p class="font-weight-bold">Tomas S</p>
+								<p>Bratislava, Slovakia</p>
+								<small class="text-muted">01.07.2018</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white m-1">
+					<div class="row no-gutters p-2 text-left">
+						<div class="col-sm-6 mb-2">
+							<p class="text-muted mb-0">Sailing School</p>
+							<p class="text-muted">Russia, June, 2018</p>
+						</div>
+						<div class="col-sm-6 text-right">
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star"></i>
+							<i data-feather="star" class="custom_star custom_star--empty"></i>
+						</div>
+						<div class="mb-2">
+							<p class="font-weight-bold mb-1">“Minor problems”</p>
+							<p>There was a discrepancy with the number of days/nights mentioned on our booking</p>
+						</div>
+						<div class="media">
+							<div class="flag--russia mr-3"></div>
+							<div class="media-body">
+								<p class="font-weight-bold">Tomas S</p>
+								<p>Bratislava, Slovakia</p>
+								<small class="text-muted">01.07.2018</small>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="tab-pane mb-5 fade" id="company-company" role="tabpanel" aria-labelledby="company-company-tab">
-				<h3 class="custom-head__title">История и направления деятельности</h3>
-				<div class="container px-md-custom">
-					<p class="mb-5">12 Knots Yachting Club was formed in 2009 and has strategically evolved from an international sailing school to one of the leading charter broker companies. We proudly provide our clients with the best choice of sail and motor yachts for bareboat
-						and crewed charters in over than 36 stunning locations all over the world. We strive to ensure that you get the best option that matches your budget and any special needs, and that your sailing vacation is one of the most memorable and inspiring.</p>
-					<div class="row mb-4 text-center text-sm-left">
-						<div class="col-8 mx-auto mx-md-0 col-sm-5 col-md-4 col-lg-3">
-							<div class="custom_circle__box">
-								<img class="custom_circle__img" src="images/company-relax.png" alt="relax">
-							</div>
-						</div>
-						<div class="col-sm-7 col-md-6 col-lg-6 my-auto">
-							<h4>Отдых на яхтах</h4>
-							<p>Организация отдыха на парусных и моторных яхтах в акваториях Карибских островов, Средиземного Моря, Сейшельских и Мальдивских островов, а также Тайланда</p>
-						</div>
+		</section>
+		<section class="bg-white">
+			<div class="container py-4">
+				<div class="row">
+					<div class="col-md-6">
+						<h5 class="mt-2">Аренда яхт</h5>
+						<p>Аренда яхт – крайне востребованная сегодня услуга. Для того чтобы из огромного перечня яхт вы могли легко найти и выбрать подходящий вариант, мы разработали и разместили у себя на сайте удобную систему поиска. Здесь вы увидите все яхты, аренда которых возможна в заданные вами даты, а также все нюансы, сопровождающие чартер яхт (прокат яхт). Система поиска яхты напрокат позволяет вам выбрать страну или акваторию, в которой вам интересен прокат яхт, указать желаемую дату начала использования яхты в аренду, снять яхту с нужным количеством кают. Изучая базу данных аренды моторных яхт, следует обращать внимание на множество аспектов, а не только лишь на стоимость аренды яхты. Важно! Большинство компаний предоставляет аренду парусных яхт сроком от одной недели (с субботы по субботу), исключение составляет Тайланд и Карибские острова, где аренда парусной яхты возможна по дням. Если вас заинтересовала яхта в аренду и вы нашли подходящий специалистам за более подробной информацией!</p>
+						<h5 class="mt-2">Несколько рекомендаций при выборе яхты</h5>
+						<p>Изучая базу данных аренды моторных яхт, следует обращать внимание на множество аспектов. В первую очередь это относится к молодым шкиперам, которые иногда учитывают лишь стоимость аренды яхты. Основные параметры — размер и год выпуска. При выборе размера яхты необходимо учитывать, сколько человек едет отдыхать и как комфортно вы хотите провести время. От года выпуска зависит, насколько вероятна техническая внештатная ситуация или неисправность яхты во время вашего путешествия. Большой размер яхты – это комфортные условия размещения экипажа, но он может прибавить трудностей при швартовках и проблем с нахождением парковок.</p>
 					</div>
-					<div class="row mb-4 text-center text-sm-left">
-						<div class="col-sm-7 col-md-6 col-lg-6 offset-lg-3 offset-md-2 my-auto order-2 order-sm-0">
-							<h4>Аренда яхт</h4>
-							<p>Чартер/аренда яхт. «12 Узлов» является крупнейшим представителем международных чартерных компаний, владеющих флотом по всему миру. Располагая базой из 4 500 парусных и моторных яхт, мы всегда можем оперативно предоставлять детальную информацию
-								по всем интересующим вас запросам!</p>
-						</div>
-						<div class="col-8 mx-auto col-sm-5 col-md-4 col-lg-3">
-							<div class="custom_circle__box">
-								<img class="custom_circle__img" src="images/company-rent.png" alt="rent">
-							</div>
-						</div>
-					</div>
-					<div class="row text-center text-sm-left">
-						<div class="col-8 mx-auto mx-md-0 col-sm-5 col-md-4 col-lg-3">
-							<div class="custom_circle__box">
-								<img class="custom_circle__img" src="images/company-learn.png" alt="learn">
-							</div>
-						</div>
-						<div class="col-sm-7 col-md-6 col-lg-6 my-auto">
-							<h4>Обучение</h4>
-							<p>Обучение управлению парусными и моторными яхтами с последующей выдачей международных прав капитана. Обучение проводится по стандартам IYT на собственных яхтах, базирующихся в Черногории и на Канарских островах.</p>
-						</div>
+					<div class="col-md-6 mt-sm-2">
+						<p>Модель яхты, на наш взгляд, не столь важна при выборе лодки, поскольку почти все верфи используют схожие технологии. Если вы только получили права. Если вы только закончили яхтенные курсы и получили права шкипера, не стремитесь брать яхту большого размера! Чем больше яхта, тем сложнее ей управлять как под парусами, так и под мотором, особенно во время швартовок в незнакомом месте. Наша рекомендация брать яхту такого же либо меньшего размера, чем та на которой вы проходили обучение!</p>
+						<h5 class="mt-2">Аренда яхты с капитаном</h5>
+						<p>Если вы решили взять в аренду яхту, особое внимание следует обратить, кто будет управлять судном. Даже если у вас есть необходимые для управления яхтой права, стоит задуматься над таким предложением, как аренда яхты со шкипером. Тем более если у вас не так много опыта или вовсе нет прав управления судном, то аренда яхты с капитаном – предложение именно для вас. Конечно же, снять в аренду яхту – означает свободно вздохнуть грудью и окунуться в мир морских путешествий. Однако при этом важно самому не окунуться в воду и не допустить более печальных последствий. Многих в первую очередь интересует, сколько стоит аренда яхты. Они ищут объявления «аренда яхты недорого». Но арендовать яхту нужно с осознанием ответственности за себя, своих друзей или гостей, с которыми вы собираетесь отправиться в путешествие, а также, конечно, за само имущество. Тем более это касается таких услуг, как аренда яхт за границей или, например, аренда яхты на свадьбу. В данном случае не стоит гнаться за чрезмерными впечатлениями, а, получая удовольствие от морского круиза, доверить дело профессионалу. В этом случае аренда яхты с капитаном представляется оптимальным выбором, который обеспечит вам незабываемые впечатления при гарантированной безопасности. «12 Узлов»: яхт клуб аренда высшего класса!</p>
 					</div>
 				</div>
 			</div>
-
-			<div class="tab-pane mb-5 fade" id="company-career" role="tabpanel" aria-labelledby="company-career-tab">
-				<h3 class="custom-head__title">Lorem</h3>
-				<div class="container px-md-custom">
-					<h5 class="text-center">Career Here</h5>
-				</div>
-			</div>
-
-			<div class="tab-pane mb-5 fade" id="company-press" role="tabpanel" aria-labelledby="company-press-tab">
-				<h3 class="custom-head__title">О НАС ПИШУТ</h3>
-				<div class="container px-md-custom">
-					<p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<div class="media flex-wrap flex-md-nowrap custom_press">
-						<img class="custom_press__image" src="images/press_st.png" alt="sailing today">
-						<div class="media-body">
-							<p> Created in 2008, 12 Knots currently has 12 team members. A global yacht charter hub, with over 12,000 boats in its portfolio, connecting thousands of professional renters from every corner of the globe.</p>
-
-						</div>
-					</div>
-					<div class="media flex-wrap flex-md-nowrap custom_press">
-						<img class="custom_press__image" src="images/press_vt.png" alt="voile&tourisme">
-						<div class="media-body">
-							<p>12 Knots hopes to showcase all of the world’s boat renters: close to 1,500 can already be found on their database. As well as price comparison, the site puts you in direct contact with the renter who can personally confirm the details of your cruise…
-								And since customer satisfaction makes the best publicity, the company have introduced a prize for the best renter, sure to promote excellent standards...</p>
-
-						</div>
-					</div>
-					<div class="media flex-wrap flex-md-nowrap custom_press">
-						<img class="custom_press__image" src="images/press_mb.png" alt="mer&bateaux">
-						<div class="media-body">
-							<p>In just a few clicks, 12 Knots search engine allows customers to find the perfect boat to match their requirements, at the very best price, from a network of renters known for their client satisfaction. With an interactive Google Map function and
-								multiple search criteria, you can easily find all the information you need to organize your trip...</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="tab-pane mb-5 fade" id="company-news" role="tabpanel" aria-labelledby="company-news-tab">
-				<h3 class="custom-head__title">Lorem</h3>
-				<div class="container">
-					<p class="mb-4">В данном разделе представлены наиболее важные события яхтенной индустрии и мероприятия в которых принимает участие клуб 12 Knots.</p>
-					<div class="row">
-						<div class="col-sm-6 col-md-4 custom_news">
-							<div class="custom_square__box">
-								<img src="images/team.jpg" class="custom_square__img" alt="image">
-							</div>
-							<a href="#">
-								<p class="mb-0 font-weight-bold text-truncate">Раннее бронирование Школа капитана!</p>
-							</a>
-							<p class="mb-1">01.12.2017</p>
-							<a href="#">
-								<p class="text-underlined custom_news__text">Открыт набор в группы на 2018 год! Весь декабрь действует Акция "Раннее бронирование" и предоставляется скидка на обучение - 15%. Международный курс капитана парусной яхты. Мечтайте. Открывайте. Действуйте!</p>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4 custom_news">
-							<div class="custom_square__box">
-								<img src="images/team.jpg" class="custom_square__img" alt="image">
-							</div>
-							<a href="#">
-								<p class="mb-0 font-weight-bold text-truncate">Раннее бронирование Школа капитана!</p>
-							</a>
-							<p class="mb-1">01.12.2017</p>
-							<a href="#">
-								<p class="text-underlined custom_news__text">Открыт набор в группы на 2018 год! Весь декабрь действует Акция "Раннее бронирование" и предоставляется скидка на обучение - 15%. Международный курс капитана парусной яхты. Мечтайте. Открывайте. Действуйте!</p>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4 custom_news">
-							<div class="custom_square__box">
-								<img src="images/team.jpg" class="custom_square__img" alt="image">
-							</div>
-							<a href="#">
-								<p class="mb-0 font-weight-bold text-truncate">Раннее бронирование Школа капитана!</p>
-							</a>
-							<p class="mb-1">01.12.2017</p>
-							<a href="#">
-								<p class="text-underlined custom_news__text">Открыт набор в группы на 2018 год! Весь декабрь действует Акция "Раннее бронирование" и предоставляется скидка на обучение - 15%. Международный курс капитана парусной яхты. Мечтайте. Открывайте. Действуйте!</p>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4 custom_news">
-							<div class="custom_square__box">
-								<img src="images/team.jpg" class="custom_square__img" alt="image">
-							</div>
-							<a href="#">
-								<p class="mb-0 font-weight-bold text-truncate">Раннее бронирование Школа капитана!</p>
-							</a>
-							<p class="mb-1">01.12.2017</p>
-							<a href="#">
-								<p class="text-underlined custom_news__text">Открыт набор в группы на 2018 год! Весь декабрь действует Акция "Раннее бронирование" и предоставляется скидка на обучение - 15%. Международный курс капитана парусной яхты. Мечтайте. Открывайте. Действуйте!</p>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4 custom_news">
-							<div class="custom_square__box">
-								<img src="images/team.jpg" class="custom_square__img" alt="image">
-							</div>
-							<a href="#">
-								<p class="mb-0 font-weight-bold text-truncate">Раннее бронирование Школа капитана!</p>
-							</a>
-							<p class="mb-1">01.12.2017</p>
-							<a href="#">
-								<p class="text-underlined custom_news__text">Открыт набор в группы на 2018 год! Весь декабрь действует Акция "Раннее бронирование" и предоставляется скидка на обучение - 15%. Международный курс капитана парусной яхты. Мечтайте. Открывайте. Действуйте!</p>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4 custom_news">
-							<div class="custom_square__box">
-								<img src="images/team.jpg" class="custom_square__img" alt="image">
-							</div>
-							<a href="#">
-								<p class="mb-0 font-weight-bold text-truncate">Раннее бронирование Школа капитана!</p>
-							</a>
-							<p class="mb-1">01.12.2017</p>
-							<a href="#">
-								<p class="text-underlined custom_news__text">Открыт набор в группы на 2018 год! Весь декабрь действует Акция "Раннее бронирование" и предоставляется скидка на обучение - 15%. Международный курс капитана парусной яхты. Мечтайте. Открывайте. Действуйте!</p>
-							</a>
-						</div>
-					</div>
-
-					<div class="d-flex">
-						<button class="btn btn-outline-secondary mx-auto">Показать ещё</button>
-						<nav aria-label="...">
-							<ul class="pagination justify-content-end mb-0">
-								<li class="page-item active"><a class="page-link" href="#">1</a></li>
-								<li class="page-item"><a class="page-link" href="#">2</a></li>
-								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item">
-									<a class="page-link" href="#">Next</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="tab-pane mb-5 fade" id="company-review" role="tabpanel" aria-labelledby="company-review-tab">
-				<h3 class="custom-head__title">СПАСИБО ВСЕМ, КТО ВЫБИРАЕТ «12 Узлов»</h3>
-				<div class="container">
-					<div class="mb-4">
-						<form>
-							<div class="form-row align-items-center">
-								<div class="col-6 col-sm-4 col-md-auto col-lg-2 flex-sm-grow-1 mb-3">
-									<select class="form-control custom-select">
-										<option>Вид услуги</option>
-										<option>lorem</option>
-									</select>
-								</div>
-								<div class="col-6 col-sm-4 col-md-auto col-lg-2 flex-sm-grow-1 mb-3">
-									<select class="form-control custom-select">
-										<option>Страна услуги</option>
-										<option>lorem</option>
-									</select>
-								</div>
-								<div class="col-6 col-sm-4 col-md-auto col-lg-2 flex-sm-grow-1 mb-sm-3">
-									<select class="form-control custom-select">
-										<option>Язык</option>
-										<option>lorem</option>
-									</select>
-								</div>
-								<div class="col-6 col-sm-5 col-md-4 col-lg-3 flex-sm-grow-1 ml-auto form-inline mb-3">
-									<label for="k-sort" class="my-sm-1 mr-sm-2 m-0">Сортировать:</label>
-									<select class="form-control custom-select flex-grow-1" id="k-sort">
-											<option>Новизне </option>
-											<option>lorem</option>
-									</select>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="container px-md-custom">
-					<div class="jumbotron position-relative">
-						<p class="custom-date">review date: 01.07.2018</p>
-						<div class="row">
-							<div class="col-sm-5 col-md-5 col-lg-4">
-								<div class="media">
-									<!-- <img class="mr-3" src="images/flag_ru.svg" alt="flag"> -->
-									<div class="flag--russia mr-3"></div>
-									<div class="media-body">
-										<p class="font-weight-bold">Tomas S</p>
-										<p>Bratislava, Slovakia</p>
-										<div class="my-1">
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star custom_star--empty"></i>
-										</div>
-										<div class="custom-hashtags">
-											<span>Regatta</span>
-											<span>Turkey</span>
-											<span>May 2017</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-7 col-md-7 col-lg-8">
-								<p class="font-weight-bold mb-1">“Minor problems”</p>
-								<p>There was a discrepancy with the number of days/nights mentioned on our booking (we believed regata will last four days: 15th to the 19th): but the booking should have reflected... three days: 15th to 18th September, so we had to arrange a night
-									accomodation which was ...</p>
-							</div>
-						</div>
-					</div>
-					<div class="jumbotron position-relative">
-						<p class="custom-date">review date: 01.07.2018</p>
-						<div class="row">
-							<div class="col-sm-5 col-md-5 col-lg-4">
-								<div class="media">
-									<!-- <img class="mr-3" src="images/flag_ru.svg" alt="flag"> -->
-									<div class="flag--russia mr-3"></div>
-									<div class="media-body">
-										<p class="font-weight-bold">Tomas S</p>
-										<p>Bratislava, Slovakia</p>
-										<div class="my-1">
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star custom_star--empty"></i>
-										</div>
-										<div class="custom-hashtags">
-											<span>Regatta</span>
-											<span>Turkey</span>
-											<span>May 2017</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-7 col-md-7 col-lg-8">
-								<p class="font-weight-bold mb-1">“Minor problems”</p>
-								<p>There was a discrepancy with the number of days/nights mentioned on our booking (we believed regata will last four days: 15th to the 19th): but the booking should have reflected... three days: 15th to 18th September, so we had to arrange a night
-									accomodation which was ...</p>
-							</div>
-						</div>
-					</div>
-					<div class="jumbotron position-relative">
-						<p class="custom-date">review date: 01.07.2018</p>
-						<div class="row">
-							<div class="col-sm-5 col-md-5 col-lg-4">
-								<div class="media">
-									<!-- <img class="mr-3" src="images/flag_ru.svg" alt="flag"> -->
-									<div class="flag--russia mr-3"></div>
-									<div class="media-body">
-										<p class="font-weight-bold">Tomas S</p>
-										<p>Bratislava, Slovakia</p>
-										<div class="my-1">
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star"></i>
-											<i data-feather="star" class="custom_star custom_star--empty"></i>
-										</div>
-										<div class="custom-hashtags">
-											<span>Regatta</span>
-											<span>Turkey</span>
-											<span>May 2017</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-7 col-md-7 col-lg-8">
-								<p class="font-weight-bold mb-1">“Minor problems”</p>
-								<p>There was a discrepancy with the number of days/nights mentioned on our booking (we believed regata will last four days: 15th to the 19th): but the booking should have reflected... three days: 15th to 18th September, so we had to arrange a night
-									accomodation which was ...</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="d-flex">
-						<button class="btn btn-outline-secondary mx-auto">Показать ещё</button>
-						<nav aria-label="...">
-							<ul class="pagination justify-content-end mb-0">
-								<li class="page-item active"><a class="page-link" href="#">1</a></li>
-								<li class="page-item"><a class="page-link" href="#">2</a></li>
-								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item">
-									<a class="page-link" href="#">Next</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="tab-pane mb-5 fade" id="company-partners" role="tabpanel" aria-labelledby="company-partners-tab">
-				<h3 class="custom-head__title">В ПАРТЕРСТВЕ С ВЕДУЩИМИ ЯХТЕННЫМИ КОМПАНИЯМИ</h3>
-				<div class="container px-md-custom">
-					<div class="row mb-4">
-						<div class="col-md-8 col-lg-9">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-						<div class="col-8 mx-auto col-md-4 col-lg-3">
-							<button type="button" class="btn btn-success btn-block mt-1">Lorem ipsum</button>
-						</div>
-					</div>
-					<ul class="custom-list px-md-custom">
-						<li>Lorem ipsum 1</li>
-						<li>Lorem ipsum 2</li>
-						<li>Lorem ipsum 3</li>
-						<li>Lorem ipsum 4</li>
-						<li>Lorem ipsum 5</li>
-						<li>Lorem ipsum 6</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="tab-pane mb-5 fade" id="company-contacts" role="tabpanel" aria-labelledby="company-contacts-tab">
-				<h3 class="custom-head__title">контанктная информация</h3>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-7 col-lg-8 mb-4">
-							<h4 class="font-weight-bold mb-2">Офис в Москве</h4>
-							<div class="custom_map">
-								<div id="map"></div>
-							</div>
-
-						</div>
-						<div class="col-sm-6 col-md-5 col-lg-4 mb-4">
-							<h4 class="font-weight-bold pl-md-4 mb-2">Свяжитесь с нами</h4>
-							<form action="" class="pl-md-4 custom_contact_form">
-								<input type="text" class="form-control mb-2" placeholder="* Имя, Фамилия">
-								<input type="text" class="form-control mb-2" placeholder="* Телефон">
-								<input type="email" class="form-control mb-2" placeholder="* E-mail">
-								<textarea class="form-control mb-2" rows="3">* Сообщение</textarea>
-								<button type="submit" class="btn btn-success btn-block">Отправить сообщение</button>
-							</form>
-						</div>
-						<div class="col-12 col-sm-6 col-md-12 col-lg-8 mt-2 mt-sm-4 mt-md-0 pt-sm-1 pt-md-0" itemscope itemtype="http://schema.org/Organization">
-							<h5 class="body-font mb-2">Агентство на территории России: <span itemprop="name">ООО "Вейпойнт"</span></h5>
-							<p class="mb-1">Адрес: <span itemprop="addressLocality">г. Москва</span>, <span itemprop="streetAddress">Большой Козихинский переулок, д. 22, стр. 1</span> (вход со двора), этаж 3</p>
-							<p class="mb-1">тел.: <a href="tel:+74955178697" class="" itemprop="telephone">+7 (495) 517-86-97</a></p>
-							<p class="mb-1"><a href="mailto:12@12knots.ru" class="" itemprop="email">12@12knots.ru</a></p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-		</div>
+		</section>
 	</main>
 
 	<footer class="bg-dark text-light text-center text-sm-left py-3 custom_footer">
