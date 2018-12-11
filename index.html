@@ -119,58 +119,124 @@
 
 	<main>
 		<section class="homepage_hero">
-			<div class="container">
-				<form class="form-inline homepage_hero__form row">
-					<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3">
-						<select class="custom-select custom-select-lg w-100">
-						<option>Тип активности</option>
-						<option>lorem</option>
-					</select>
+			<div class="container px-xl-custom">
+				<ul class="nav nav-tabs row no-gutters" id="k_hero_tabs" role="tablist">
+					<li class="nav-item col-4 col-md-3">
+						<a class="nav-link h4 mb-0 text-truncate hero_tabs active" id="k_hero_yacht_tab" data-toggle="tab" href="#k_hero_yacht_tab_content" role="k_hero_yacht_tab" aria-controls="k_hero_yacht_tab_content" aria-selected="true">Аренда яхт</a>
+					</li>
+					<li class="nav-item col-4 col-md-3">
+						<a class="nav-link h4 mb-0 text-truncate hero_tabs" id="k_hero_cabin_tab_tab" data-toggle="tab" href="#k_hero_cabin_tab_content" role="tab" aria-controls="k_hero_cabin_tab_content" aria-selected="false">Аренда кают</a>
+					</li>
+					<li class="nav-item col-4 col-md-3">
+						<a class="nav-link h4 mb-0 text-truncate hero_tabs" id="k_hero_learn_tab_tab" data-toggle="tab" href="#k_hero_learn_tab_content" role="tab" aria-controls="k_hero_learn_tab_content" aria-selected="false">Обучение</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="k_hero_tabs_content">
+					<div class="tab-pane fade show active" id="k_hero_yacht_tab_content" role="tabpanel" aria-labelledby="k_hero_yacht_tab">
+						<form class="form-inline homepage_hero__form row mx-0">
+							<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3">
+								<select class="custom-select custom-select-lg w-100">
+								<option>Тип активности</option>
+								<option>lorem</option>
+							</select>
+							</div>
+							<div class="col-sm-6 col-md-5 col-lg-3 mt-2 mt-sm-0">
+								<select class="custom-select custom-select-lg w-100">
+								<option>Все страны</option>
+								<option>lorem</option>
+							</select>
+							</div>
+							<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3 mt-2 mt-lg-0">
+								<select class="custom-select custom-select-lg w-100">
+								<option>Выберите даты</option>
+								<option>lorem</option>
+							</select>
+							</div>
+							<div class="col-sm-6 col-md-5 col-lg-3 mt-2 mt-lg-0">
+								<button type="submit" class="btn btn-success btn-lg btn-block">Подобрать яхту</button>
+							</div>
+						</form>
 					</div>
-					<div class="col-sm-6 col-md-5 col-lg-3 mt-2 mt-sm-0">
-						<select class="custom-select custom-select-lg w-100">
-						<option>Все страны</option>
-						<option>lorem</option>
-					</select>
+					<div class="tab-pane fade" id="k_hero_cabin_tab_content" role="tabpanel" aria-labelledby="k_cabin_yacht_tab">
+						<form class="form-inline homepage_hero__form row mx-0">
+							<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3">
+								<select class="custom-select custom-select-lg w-100">
+								<option>Тип активности</option>
+								<option>lorem</option>
+							</select>
+							</div>
+							<div class="col-sm-6 col-md-5 col-lg-3 mt-2 mt-sm-0">
+								<select class="custom-select custom-select-lg w-100">
+								<option>Все страны</option>
+								<option>lorem</option>
+							</select>
+							</div>
+							<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3 mt-2 mt-lg-0">
+								<select class="custom-select custom-select-lg w-100">
+								<option>Выберите даты</option>
+								<option>lorem</option>
+							</select>
+							</div>
+							<div class="col-sm-6 col-md-5 col-lg-3 mt-2 mt-lg-0">
+								<button type="submit" class="btn btn-success btn-lg btn-block">Подобрать каюту</button>
+							</div>
+						</form>
 					</div>
-					<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3 mt-2 mt-lg-0">
-						<select class="custom-select custom-select-lg w-100">
-						<option>Выберите даты</option>
-						<option>lorem</option>
-					</select>
+					<div class="tab-pane fade" id="k_hero_learn_tab_content" role="tabpanel" aria-labelledby="k_hero_learn_tab">
+						<form class="form-inline homepage_hero__form row mx-0">
+							<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3">
+								<select class="custom-select custom-select-lg w-100">
+								<option>Тип активности</option>
+								<option>lorem</option>
+							</select>
+							</div>
+							<div class="col-sm-6 col-md-5 col-lg-3 mt-2 mt-sm-0">
+								<select class="custom-select custom-select-lg w-100">
+								<option>Все страны</option>
+								<option>lorem</option>
+							</select>
+							</div>
+							<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3 mt-2 mt-lg-0">
+								<select class="custom-select custom-select-lg w-100">
+								<option>Выберите даты</option>
+								<option>lorem</option>
+							</select>
+							</div>
+							<div class="col-sm-6 col-md-5 col-lg-3 mt-2 mt-lg-0">
+								<button type="submit" class="btn btn-success btn-lg btn-block">Подобрать</button>
+							</div>
+						</form>
 					</div>
-					<div class="col-sm-6 col-md-5 col-lg-3 mt-2 mt-lg-0">
-						<button type="submit" class="btn btn-success btn-lg btn-block">Подобрать яхту</button>
-					</div>
-				</form>
+				</div>
 			</div>
-		</section>
-		<section class="bg-primary text-white text-center">
-			<div class="container">
-				<div class="row py-3">
-					<div class="col-sm-6 col-lg-3 border-right">
-						<img src="images/icon-yacht.svg" alt="rent a yacht">
-						<p class="mt-2">Аренда яхт</p>
-						<small>Быстрый поиск и бронирование парусных и моторных яхт в режиме реального времени. Профессиональная консультация по вопросам аренды</small>
-					</div>
-					<div class="col-sm-6 col-lg-3 border-right">
-						<img src="images/icon-learn.svg" alt="rent a yacht">
-						<p class="mt-2">Обучение</p>
-						<small>Профессиональная подготовка капитанов парусных и моторных яхт. Практические навыки по управлению яхтой в любой точке мира</small>
-					</div>
-					<div class="col-sm-6 col-lg-3 border-right">
-						<img src="images/icon-cruise.svg" alt="rent a yacht">
-						<p class="mt-2">Круизы</p>
-						<small>Предлагаем вам арендовать каюту и отправиться в круиз на одной из наших комфортабельных яхт!</small>
-					</div>
-					<div class="col-sm-6 col-lg-3">
-						<img src="images/icon-regata.svg" alt="rent a yacht">
-						<p class="mt-2">Регаты</p>
-						<small>Мы поможем вам принять учатие в ведущих яхтенных состязаниях в мире</small>
+			<div class="text-white text-center w-100 bg-gradient d-none d-sm-block">
+				<div class="container">
+					<div class="row py-3">
+						<div class="col-3 border-right">
+							<img src="images/icon-yacht.svg" alt="rent a yacht">
+							<p class="mt-2">Аренда яхт</p>
+							<small class="d-none d-lg-block">Быстрый поиск и бронирование парусных и моторных яхт в режиме реального времени. Профессиональная консультация по вопросам аренды</small>
+						</div>
+						<div class="col-3 border-right">
+							<img src="images/icon-learn.svg" alt="rent a yacht">
+							<p class="mt-2">Обучение</p>
+							<small class="d-none d-lg-block">Профессиональная подготовка капитанов парусных и моторных яхт. Практические навыки по управлению яхтой в любой точке мира</small>
+						</div>
+						<div class="col-3 border-right">
+							<img src="images/icon-cruise.svg" alt="rent a yacht">
+							<p class="mt-2">Круизы</p>
+							<small class="d-none d-lg-block">Предлагаем вам арендовать каюту и отправиться в круиз на одной из наших комфортабельных яхт!</small>
+						</div>
+						<div class="col-3">
+							<img src="images/icon-regata.svg" alt="rent a yacht">
+							<p class="mt-2">Регаты</p>
+							<small class="d-none d-lg-block">Мы поможем вам принять учатие в ведущих яхтенных состязаниях в мире</small>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<section class="container mt-5 p-0">
 			<h2 class="text-center mb-3">АРЕНДА ЯХТ: ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ и ТИПЫ ЯХТ</h2>
 			<div class="popular_slider">
@@ -221,41 +287,101 @@
 				</div>
 			</div>
 		</section>
-		<section class="container mt-3">
-			<div class="row">
+		<section class="container mt-5">
+			<!-- <div class="row">
 				<div class="col-sm-6 mb-4 mb-sm-0">
+					<div class="custom_square__box add-gradient">
+						<img src="images\mediterranean-sea.jpg" class="custom_square__img" alt="">
+					</div>
 					<img src="images\mediterranean-sea.jpg" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-6">
 					<div class="h-50 pb-2">
+						<div class="custom_landscape__box add-gradient">
+							<img src="images\mediterranean-sea.jpg" class="custom_landscape__img" alt="">
+						</div>
 						<img src="images\caribs.jpg" class="img-fluid" alt="caribs">
 					</div>
 					<div class="h-50 pt-2">
+						<div class="custom_landscape__box add-gradient">
+							<img src="images\mediterranean-sea.jpg" class="custom_landscape__img" alt="">
+						</div>
 						<img src="images\atlantic-europe.jpg" class="img-fluid" alt="atlantic europe">
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="homepage_cruise">
-			<div class="container position-relative h-100">
-				<h2 class="text-center text-white pt-5">КРУИЗЫ НА ЯХТАХ</h2>
-				<div class="homepage_cruise__box">
-					<h2 class="display-3">Аренда кают</h2>
-					<p class="h1 mb-4">от $10 с человека в день</p>
-					<button class="btn btn-secondary btn-lg">Узнать больше</button>
+			</div> -->
+			<div class="custom_grid">
+				<div class="custom_square__box add-gradient">
+					<img src="images\mediterranean-sea.jpg" class="custom_square__img" alt="">
+				</div>
+				<div class="custom_landscape__box add-gradient">
+					<img src="images\caribs.jpg" class="custom_landscape__img" alt="">
+				</div>
+				<div class="custom_landscape__box add-gradient">
+					<img src="images\atlantic-europe.jpg" class="custom_landscape__img" alt="">
 				</div>
 			</div>
+
+			<button type="button" class="btn btn-outline-info text-center mx-auto d-block mt-3">Показать все направления</button>
 		</section>
-		<section class="homepage_learn">
-			<div class="container position-relative h-100">
-				<h2 class="text-center text-white pt-5">ОБУЧЕНИЕ ЯХТИНГУ</h2>
-				<div class="homepage_cruise__box text-white">
-					<h2 class="display-3">Морская практика</h2>
-					<p class="h1 mb-4">От $600 за курс</p>
-					<button class="btn btn-secondary btn-lg">Узнать больше</button>
+		<section class="container mt-5">
+			<h2 class="text-center mb-3">АРЕНДА КАЮТ: ПОПУЛЯРНЫЕ круизные направления и регаты</h2>
+			<div class="row">
+				<div class="col-sm-4 mb-3">
+					<div class="custom_square__box add-gradient">
+						<img src="images\mediterranean-sea.jpg" class="custom_square__img" alt="">
+					</div>
+				</div>
+				<div class="col-sm-4 mb-3">
+					<div class="custom_square__box add-gradient">
+						<img src="images\mediterranean-sea.jpg" class="custom_square__img" alt="">
+					</div>
+				</div>
+				<div class="col-sm-4 mb-3">
+					<div class="custom_square__box add-gradient">
+						<img src="images\mediterranean-sea.jpg" class="custom_square__img" alt="">
+					</div>
+				</div>
+				<div class="col-sm-4 mb-3">
+					<div class="custom_square__box add-gradient">
+						<img src="images\mediterranean-sea.jpg" class="custom_square__img" alt="">
+					</div>
+				</div>
+				<div class="col-sm-8 mb-3">
+					<div class="custom_landscape__box add-gradient">
+						<img src="images\mediterranean-sea.jpg" class="custom_landscape__img" alt="">
+					</div>
 				</div>
 			</div>
+			<button type="button" class="btn btn-outline-info text-center mx-auto d-block">Показать все направления</button>
 		</section>
+		<section class="container mt-5">
+			<h2 class="text-center mb-3">ОБУЧЕНИЕ ЯХТИНГУ: популярные программы</h2>
+			<div class="row">
+				<div class="col-sm-6 mb-4">
+					<div class="custom_landscape__box add-gradient">
+						<img src="images\mediterranean-sea.jpg" class="custom_landscape__img" alt="">
+					</div>
+				</div>
+				<div class="col-sm-6 mb-4">
+					<div class="custom_landscape__box add-gradient">
+						<img src="images\mediterranean-sea.jpg" class="custom_landscape__img" alt="">
+					</div>
+				</div>
+				<div class="col-sm-6 mb-4">
+					<div class="custom_landscape__box add-gradient">
+						<img src="images\mediterranean-sea.jpg" class="custom_landscape__img" alt="">
+					</div>
+				</div>
+				<div class="col-sm-6 mb-4">
+					<div class="custom_landscape__box add-gradient">
+						<img src="images\mediterranean-sea.jpg" class="custom_landscape__img" alt="">
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn btn-outline-info text-center mx-auto d-block">Показать все направления</button>
+		</section>
+
 		<section class="text-center my-5">
 			<div class="reviews_slider">
 				<div class="bg-white m-1">
@@ -508,14 +634,25 @@
 				<div class="row">
 					<div class="col-md-6">
 						<h5 class="mt-2">Аренда яхт</h5>
-						<p>Аренда яхт – крайне востребованная сегодня услуга. Для того чтобы из огромного перечня яхт вы могли легко найти и выбрать подходящий вариант, мы разработали и разместили у себя на сайте удобную систему поиска. Здесь вы увидите все яхты, аренда которых возможна в заданные вами даты, а также все нюансы, сопровождающие чартер яхт (прокат яхт). Система поиска яхты напрокат позволяет вам выбрать страну или акваторию, в которой вам интересен прокат яхт, указать желаемую дату начала использования яхты в аренду, снять яхту с нужным количеством кают. Изучая базу данных аренды моторных яхт, следует обращать внимание на множество аспектов, а не только лишь на стоимость аренды яхты. Важно! Большинство компаний предоставляет аренду парусных яхт сроком от одной недели (с субботы по субботу), исключение составляет Тайланд и Карибские острова, где аренда парусной яхты возможна по дням. Если вас заинтересовала яхта в аренду и вы нашли подходящий специалистам за более подробной информацией!</p>
+						<p>Аренда яхт – крайне востребованная сегодня услуга. Для того чтобы из огромного перечня яхт вы могли легко найти и выбрать подходящий вариант, мы разработали и разместили у себя на сайте удобную систему поиска. Здесь вы увидите все яхты, аренда которых
+							возможна в заданные вами даты, а также все нюансы, сопровождающие чартер яхт (прокат яхт). Система поиска яхты напрокат позволяет вам выбрать страну или акваторию, в которой вам интересен прокат яхт, указать желаемую дату начала использования яхты
+							в аренду, снять яхту с нужным количеством кают. Изучая базу данных аренды моторных яхт, следует обращать внимание на множество аспектов, а не только лишь на стоимость аренды яхты. Важно! Большинство компаний предоставляет аренду парусных яхт сроком
+							от одной недели (с субботы по субботу), исключение составляет Тайланд и Карибские острова, где аренда парусной яхты возможна по дням. Если вас заинтересовала яхта в аренду и вы нашли подходящий специалистам за более подробной информацией!</p>
 						<h5 class="mt-2">Несколько рекомендаций при выборе яхты</h5>
-						<p>Изучая базу данных аренды моторных яхт, следует обращать внимание на множество аспектов. В первую очередь это относится к молодым шкиперам, которые иногда учитывают лишь стоимость аренды яхты. Основные параметры — размер и год выпуска. При выборе размера яхты необходимо учитывать, сколько человек едет отдыхать и как комфортно вы хотите провести время. От года выпуска зависит, насколько вероятна техническая внештатная ситуация или неисправность яхты во время вашего путешествия. Большой размер яхты – это комфортные условия размещения экипажа, но он может прибавить трудностей при швартовках и проблем с нахождением парковок.</p>
+						<p>Изучая базу данных аренды моторных яхт, следует обращать внимание на множество аспектов. В первую очередь это относится к молодым шкиперам, которые иногда учитывают лишь стоимость аренды яхты. Основные параметры — размер и год выпуска. При выборе
+							размера яхты необходимо учитывать, сколько человек едет отдыхать и как комфортно вы хотите провести время. От года выпуска зависит, насколько вероятна техническая внештатная ситуация или неисправность яхты во время вашего путешествия. Большой размер
+							яхты – это комфортные условия размещения экипажа, но он может прибавить трудностей при швартовках и проблем с нахождением парковок.</p>
 					</div>
 					<div class="col-md-6 mt-sm-2">
-						<p>Модель яхты, на наш взгляд, не столь важна при выборе лодки, поскольку почти все верфи используют схожие технологии. Если вы только получили права. Если вы только закончили яхтенные курсы и получили права шкипера, не стремитесь брать яхту большого размера! Чем больше яхта, тем сложнее ей управлять как под парусами, так и под мотором, особенно во время швартовок в незнакомом месте. Наша рекомендация брать яхту такого же либо меньшего размера, чем та на которой вы проходили обучение!</p>
+						<p>Модель яхты, на наш взгляд, не столь важна при выборе лодки, поскольку почти все верфи используют схожие технологии. Если вы только получили права. Если вы только закончили яхтенные курсы и получили права шкипера, не стремитесь брать яхту большого
+							размера! Чем больше яхта, тем сложнее ей управлять как под парусами, так и под мотором, особенно во время швартовок в незнакомом месте. Наша рекомендация брать яхту такого же либо меньшего размера, чем та на которой вы проходили обучение!</p>
 						<h5 class="mt-2">Аренда яхты с капитаном</h5>
-						<p>Если вы решили взять в аренду яхту, особое внимание следует обратить, кто будет управлять судном. Даже если у вас есть необходимые для управления яхтой права, стоит задуматься над таким предложением, как аренда яхты со шкипером. Тем более если у вас не так много опыта или вовсе нет прав управления судном, то аренда яхты с капитаном – предложение именно для вас. Конечно же, снять в аренду яхту – означает свободно вздохнуть грудью и окунуться в мир морских путешествий. Однако при этом важно самому не окунуться в воду и не допустить более печальных последствий. Многих в первую очередь интересует, сколько стоит аренда яхты. Они ищут объявления «аренда яхты недорого». Но арендовать яхту нужно с осознанием ответственности за себя, своих друзей или гостей, с которыми вы собираетесь отправиться в путешествие, а также, конечно, за само имущество. Тем более это касается таких услуг, как аренда яхт за границей или, например, аренда яхты на свадьбу. В данном случае не стоит гнаться за чрезмерными впечатлениями, а, получая удовольствие от морского круиза, доверить дело профессионалу. В этом случае аренда яхты с капитаном представляется оптимальным выбором, который обеспечит вам незабываемые впечатления при гарантированной безопасности. «12 Узлов»: яхт клуб аренда высшего класса!</p>
+						<p>Если вы решили взять в аренду яхту, особое внимание следует обратить, кто будет управлять судном. Даже если у вас есть необходимые для управления яхтой права, стоит задуматься над таким предложением, как аренда яхты со шкипером. Тем более если у
+							вас не так много опыта или вовсе нет прав управления судном, то аренда яхты с капитаном – предложение именно для вас. Конечно же, снять в аренду яхту – означает свободно вздохнуть грудью и окунуться в мир морских путешествий. Однако при этом важно
+							самому не окунуться в воду и не допустить более печальных последствий. Многих в первую очередь интересует, сколько стоит аренда яхты. Они ищут объявления «аренда яхты недорого». Но арендовать яхту нужно с осознанием ответственности за себя, своих
+							друзей или гостей, с которыми вы собираетесь отправиться в путешествие, а также, конечно, за само имущество. Тем более это касается таких услуг, как аренда яхт за границей или, например, аренда яхты на свадьбу. В данном случае не стоит гнаться
+							за чрезмерными впечатлениями, а, получая удовольствие от морского круиза, доверить дело профессионалу. В этом случае аренда яхты с капитаном представляется оптимальным выбором, который обеспечит вам незабываемые впечатления при гарантированной
+							безопасности. «12 Узлов»: яхт клуб аренда высшего класса!</p>
 					</div>
 				</div>
 			</div>
