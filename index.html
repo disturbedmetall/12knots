@@ -119,7 +119,10 @@
 
 	<main>
 		<section class="homepage_hero">
-			<div class="container px-xl-custom">
+			<video class="homepage_hero__video" playsinline autoplay muted loop poster="images/video.jpg" id="" width="x" height="y">
+				<source src="images/hero.mp4" type="video/mp4">
+			</video>
+			<div class="container px-xl-custom homepage_hero__container">
 				<ul class="nav nav-tabs row no-gutters" id="k_hero_tabs" role="tablist">
 					<li class="nav-item col-4 col-md-3">
 						<a class="nav-link h4 mb-0 text-truncate hero_tabs active" id="k_hero_yacht_tab" data-toggle="tab" href="#k_hero_yacht_tab_content" role="k_hero_yacht_tab" aria-controls="k_hero_yacht_tab_content" aria-selected="true">Аренда яхт</a>
@@ -132,7 +135,7 @@
 					</li>
 				</ul>
 				<div class="tab-content" id="k_hero_tabs_content">
-					<div class="tab-pane fade show active" id="k_hero_yacht_tab_content" role="tabpanel" aria-labelledby="k_hero_yacht_tab">
+					<div class="tab-pane fade homepage_hero__tab show active" id="k_hero_yacht_tab_content" role="tabpanel" aria-labelledby="k_hero_yacht_tab">
 						<form class="form-inline homepage_hero__form row mx-0">
 							<div class="col-sm-6 col-md-4  offset-lg-0 col-lg-3">
 								<select class="custom-select custom-select-lg w-100">
@@ -157,7 +160,7 @@
 							</div>
 						</form>
 					</div>
-					<div class="tab-pane fade" id="k_hero_cabin_tab_content" role="tabpanel" aria-labelledby="k_cabin_yacht_tab">
+					<div class="tab-pane fade homepage_hero__tab" id="k_hero_cabin_tab_content" role="tabpanel" aria-labelledby="k_cabin_yacht_tab">
 						<form class="form-inline homepage_hero__form row mx-0">
 							<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3">
 								<select class="custom-select custom-select-lg w-100">
@@ -182,7 +185,7 @@
 							</div>
 						</form>
 					</div>
-					<div class="tab-pane fade" id="k_hero_learn_tab_content" role="tabpanel" aria-labelledby="k_hero_learn_tab">
+					<div class="tab-pane fade homepage_hero__tab" id="k_hero_learn_tab_content" role="tabpanel" aria-labelledby="k_hero_learn_tab">
 						<form class="form-inline homepage_hero__form row mx-0">
 							<div class="col-sm-6 col-md-5 offset-md-1 offset-lg-0 col-lg-3">
 								<select class="custom-select custom-select-lg w-100">
@@ -241,7 +244,7 @@
 			<h2 class="text-center mb-3">АРЕНДА ЯХТ: ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ и ТИПЫ ЯХТ</h2>
 			<div class="popular_slider">
 				<div class="popular_slider__div">
-					<div class="custom_portrait__box">
+					<div class="custom_portrait__box add-gradient">
 						<div class="custom_portrait__text text-center">
 							<h4>Аренда парусных яхт</h4>
 							<p>более 3000 предложений</p>
@@ -250,7 +253,7 @@
 					</div>
 				</div>
 				<div class="popular_slider__div">
-					<div class="custom_portrait__box">
+					<div class="custom_portrait__box add-gradient">
 						<div class="custom_portrait__text text-center">
 							<h4>Аренда моторных яхт </h4>
 							<p>более 2000 предложений</p>
@@ -259,7 +262,7 @@
 					</div>
 				</div>
 				<div class="popular_slider__div">
-					<div class="custom_portrait__box">
+					<div class="custom_portrait__box add-gradient">
 						<div class="custom_portrait__text text-center">
 							<h4>Аренда катамаранов</h4>
 							<p>более 2000 предложений</p>
@@ -268,7 +271,7 @@
 					</div>
 				</div>
 				<div class="popular_slider__div">
-					<div class="custom_portrait__box">
+					<div class="custom_portrait__box add-gradient">
 						<div class="custom_portrait__text text-center">
 							<h4>Аренда гулетов</h4>
 							<p>более 1000 предложений</p>
@@ -277,7 +280,7 @@
 					</div>
 				</div>
 				<div class="popular_slider__div">
-					<div class="custom_portrait__box">
+					<div class="custom_portrait__box add-gradient">
 						<div class="custom_portrait__text text-center">
 							<h4>Аренда гулетов</h4>
 							<p>более 1000 предложений</p>
