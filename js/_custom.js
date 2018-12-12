@@ -1,6 +1,8 @@
 ;
 (function() {
 
+  feather.replace()
+
   $('.popular_slider').slick({
     slidesToShow: 4,
     arrows: true,
@@ -65,32 +67,6 @@
       }
     ]
   });
-})();
-
-jQuery(document).ready(function($) {
-  var ourOfficeIcon = L.icon({
-    iconUrl: '../images/location.svg',
-    iconSize: [40, 40],
-    iconAnchor: [20, 40],
-    popupAnchor: [0, -40]
-  });
-
-  var ourOffice = L.marker([55.7646756, 37.5951047], {
-    icon: ourOfficeIcon
-  });
-
-  var map = L.map('map', {
-    center: [55.7646756, 37.5951047],
-    zoom: 15,
-    layers: [ourOffice]
-  });
-
-  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-    maxZoom: 18
-  }).addTo(map);
-
-  feather.replace()
 
   var kLang = document.getElementById("k-lang");
   kLang.addEventListener("click", toggleIcon, false);
@@ -107,4 +83,27 @@ jQuery(document).ready(function($) {
     }
   }
 
-})(jQuery);
+  //
+  // var ourOfficeIcon = L.icon({
+  //   iconUrl: '../images/location.svg',
+  //   iconSize: [40, 40],
+  //   iconAnchor: [20, 40],
+  //   popupAnchor: [0, -40]
+  // });
+  //
+  // var ourOffice = L.marker([55.7646756, 37.5951047], {
+  //   icon: ourOfficeIcon
+  // });
+  //
+  // var map = L.map('map', {
+  //   center: [55.7646756, 37.5951047],
+  //   zoom: 15,
+  //   layers: [ourOffice]
+  // });
+  //
+  // L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  //   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+  //   maxZoom: 18
+  // }).addTo(map);
+
+})();

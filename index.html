@@ -12,6 +12,7 @@
 	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#2a2826">
 	<meta name="theme-color" content="#f5f4f3">
+	<meta name="robots" content="noindex,nofollow">
 
 	<title>Catamaran charter, sailing catamaran rentals and vacations, bareboat and crewed options – over • yachts available</title>
 	<link rel="stylesheet" href="css/style.css">
@@ -119,7 +120,7 @@
 
 	<main>
 		<section class="homepage_hero">
-			<video class="homepage_hero__video" playsinline autoplay muted loop poster="images/video.jpg" id="" width="x" height="y">
+			<video class="homepage_hero__video" playsinline autoplay muted loop poster="images/video-placeholder.jpg" id="" width="x" height="y">
 				<source src="images/hero.mp4" type="video/mp4">
 			</video>
 			<div class="container px-xl-custom homepage_hero__container">
@@ -139,9 +140,11 @@
 						<form class="form-inline homepage_hero__form row mx-0">
 							<div class="col-sm-6 col-md-4  offset-lg-0 col-lg-3">
 								<select class="custom-select custom-select-lg w-100">
-								<option>Тип активности</option>
-								<option>lorem</option>
-							</select>
+									<option value="0" selected="selected">Тип активности</option>
+									<option value="rent">Аренда яхты / без команды</option>
+									<option value="rentlux">Аренда яхты люкс</option>
+									<option value="cabin">Аренда каюты / круиз</option>
+								</select>
 							</div>
 							<div class="col-sm-6 col-md-4 col-lg-3 mt-2 mt-sm-0">
 								<select class="custom-select custom-select-lg w-100">
@@ -156,7 +159,7 @@
 							</select>
 							</div>
 							<div class="col-sm-6 col-md-4 col-lg-3 mt-2 mt-lg-0 ml-auto ml-lg-0">
-								<button type="submit" class="btn btn-success btn-lg btn-block">Подобрать яхту</button>
+								<button type="submit" class="btn btn-success btn-lg btn-block h3 mb-0">Подобрать яхту</button>
 							</div>
 						</form>
 					</div>
@@ -240,7 +243,7 @@
 			</div>
 		</section>
 
-		<section class="container mt-5 p-0">
+		<section class="container mt-6 p-0">
 			<h2 class="text-center mb-3">АРЕНДА ЯХТ: ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ и ТИПЫ ЯХТ</h2>
 			<div class="popular_slider">
 				<div class="popular_slider__div">
@@ -290,7 +293,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="container mt-5">
+		<section class="container mt-4">
 			<!-- <div class="row">
 				<div class="col-sm-6 mb-4 mb-sm-0">
 					<div class="custom_square__box add-gradient">
@@ -339,7 +342,7 @@
 
 			<button type="button" class="btn btn-outline-info text-center mx-auto d-block mt-3">Показать все направления</button>
 		</section>
-		<section class="container mt-5">
+		<section class="container mt-6">
 			<h2 class="text-center mb-3">АРЕНДА КАЮТ: ПОПУЛЯРНЫЕ круизные направления и регаты</h2>
 			<div class="row">
 				<div class="col-sm-4 mb-3">
@@ -390,7 +393,7 @@
 			</div>
 			<button type="button" class="btn btn-outline-info text-center mx-auto d-block">Показать все направления</button>
 		</section>
-		<section class="container mt-5">
+		<section class="container mt-6">
 			<h2 class="text-center mb-3">ОБУЧЕНИЕ ЯХТИНГУ: популярные программы</h2>
 			<div class="row">
 				<div class="col-sm-6 mb-4">
