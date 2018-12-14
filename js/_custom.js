@@ -107,3 +107,9 @@
   // }).addTo(map);
 
 })();
+
+jQuery(document).ready(function() {
+  $('#k-favorite').click(function () {
+    $('#k-favorite-div').toggleClass('k-active');
+  });
+})

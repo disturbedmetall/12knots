@@ -7858,3 +7858,57 @@ main {
   justify-content: space-between;
   background-image: url(../images_new/to_be_deleted/header_map.jpg);
   background-size: cover; }
+
+.icon-yacht:hover .circle-stroke {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  fill: transparent; }
+
+.icon-yacht:hover .main .st0 {
+  -webkit-animation: float 2s ease-in-out infinite;
+  animation: float 2s ease-in-out infinite; }
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  50% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+    opacity: 0; }
+  51% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  50% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+    opacity: 0; }
+  51% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
