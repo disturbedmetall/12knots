@@ -1,8 +1,6 @@
 ;
 (function() {
 
-  feather.replace()
-
   $('.popular_slider').slick({
     slidesToShow: 4,
     arrows: true,
