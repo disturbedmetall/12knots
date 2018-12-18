@@ -66,6 +66,18 @@
     ]
   });
 
+  $('.yacht_slider').slick({
+    slidesToShow: 1,
+    arrows: true,
+    responsive: [{
+      breakpoint: 556,
+      settings: {
+        arrows: false
+      }
+    }
+  ]
+  });
+
   // var kLang = document.getElementById("k-lang");
   // kLang.addEventListener("click", toggleIcon, false);
   //
