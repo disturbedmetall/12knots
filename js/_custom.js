@@ -1,5 +1,69 @@
 ;
-(function() {
++function ($, window, document, undefined) {
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+var lazyLoadImage = function() {
+  var lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+              var lazyImage = entry.target;
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.classList.remove("lazy");
+              lazyImageObserver.unobserve(lazyImage);
+          }
+      });
+  });
+
+  lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+  });
+};
+
+var lazyLoadImagePolyfill = function() {
+  var active = false;
+
+  if (active === false) {
+      active = true;
+
+      setTimeout(function() {
+          lazyImages.forEach(function(lazyImage) {
+              if ((lazyImage.getBoundingClientRect().top <= window.innerHeight
+                   && lazyImage.getBoundingClientRect().bottom >= 0)
+                   && getComputedStyle(lazyImage).display !== 'none') {
+                       console.log('lazyImage:', lazyImage);
+                       lazyImage.src = lazyImage.dataset.src;
+                       lazyImage.classList.remove('lazy');
+
+                       lazyImages = lazyImages.filter(function(image) {
+                           return image !== lazyImage;
+                       });
+
+                      if (lazyImages.length === 0) {
+                          document.removeEventListener('scroll', lazyLoadImagePolyfill);
+                          window.removeEventListener('resize', lazyLoadImagePolyfill);
+                          window.removeEventListener('orientationchange', 
+                          lazyLoadImagePolyfill);
+                  }
+              }
+          });
+          active = false;
+      }, 200);
+  }
+  document.addEventListener("scroll", lazyLoadImagePolyfill);
+  window.addEventListener("resize", lazyLoadImagePolyfill);
+  window.addEventListener("orientationchange", lazyLoadImagePolyfill);
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+  if ("IntersectionObserver" in window) {
+      lazyLoadImage();
+  } else {
+      lazyLoadImagePolyfill();
+  }
+});
+}(jQuery, window, document);
+
+(function () {
 
   $('.popular_slider').slick({
     slidesToShow: 4,
@@ -74,8 +138,7 @@
       settings: {
         arrows: false
       }
-    }
-  ]
+    }]
   });
 
   // var kLang = document.getElementById("k-lang");
@@ -118,8 +181,9 @@
 
 })();
 
-jQuery(document).ready(function() {
+jQuery(document).ready(function () {
   $('#k-favorite').click(function () {
     $('#k-favorite-div').toggleClass('k-active');
   });
 })
+
