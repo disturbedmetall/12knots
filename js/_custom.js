@@ -1,4 +1,9 @@
 ;
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+
 +function ($, window, document, undefined) {
   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
@@ -134,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function(){
     slidesToShow: 1,
     arrows: true,
     responsive: [{
-      breakpoint: 556,
+      breakpoint: 576,
       settings: {
         arrows: false
       }
